@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">hospital_android_project</string>
+    <string name="dep_code">dep_code</string>
+    <string name="dep_name">dep_name</string>
+</resources>

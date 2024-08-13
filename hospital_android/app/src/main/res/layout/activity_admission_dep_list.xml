@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4667b4"
+    tools:context=".AdmissionDepList">
+
+    <View
+        android:id="@+id/arch_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/arch_background" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dep_home_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-light"
+        android:text="Back"
+        android:textSize="13sp"
+        app:icon="@drawable/baseline_arrow_back_ios_new_24"
+        app:iconSize="13sp"
+        app:iconPadding="3dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_marginStart="30dp"
+        android:text="Departments"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"/>
+
+    <include
+        android:id="@+id/search_bar"
+        layout="@layout/dep_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/depList_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar"
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        tools:listitem="@layout/admit_dep_list_item"/>
+
+</RelativeLayout>

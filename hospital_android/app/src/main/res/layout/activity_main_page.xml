@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4667b4"
+    tools:context=".MainPageActivity">
+
+    <View
+        android:id="@+id/arch_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:background="@drawable/arch_background" />
+
+    <TextView
+        android:id="@+id/patient_form_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:text="Welcome"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/dep_page_btn"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="40dp"
+            android:text="Departments"
+            android:backgroundTint="#ff7364"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/patient_page_btn"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="40dp"
+            android:text="Patients"
+            android:backgroundTint="#ff7364"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

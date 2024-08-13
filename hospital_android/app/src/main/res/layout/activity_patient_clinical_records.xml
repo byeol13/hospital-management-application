@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4667b4"
+    tools:context=".PatientClinicalRecords">
+
+    <View
+        android:id="@+id/arch_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/arch_background" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/patient_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-light"
+        android:text="Back"
+        android:textSize="13sp"
+        app:icon="@drawable/baseline_arrow_back_ios_new_24"
+        app:iconSize="13sp"
+        app:iconPadding="3dp"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="30dp"
+        android:text="Clinical Data Recordings for patient"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:id="@+id/patient_fullname_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:textStyle="normal"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:text="Patient Name"
+        android:layout_marginStart="30dp"/>
+
+    <include
+        android:id="@+id/search_bar"
+        layout="@layout/clinical_record_search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+
+    <TextView
+        android:id="@+id/clinical_data_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:layout_marginStart="30dp"
+        android:text="Clinical Data"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif-light"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/clinicalList_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="30dp"
+        tools:listitem="@layout/list_clinical_record_item"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/clinicalRecordList_nav_btn"
+        android:layout_width="50dp"
+        android:layout_height="57dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="20dp"
+        app:backgroundTint="#ff7364"
+        app:cornerRadius="500dp"
+        app:icon="@android:drawable/ic_input_add"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp" />
+
+</RelativeLayout>

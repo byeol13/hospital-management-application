@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background Color -->
+    <item>
+        <shape>
+            <solid android:color="#4667b4" />
+        </shape>
+    </item>
+
+    <!-- Arch -->
+    <item>
+        <shape>
+            <solid android:color="#FFFFFF" /> <!-- Primary color, adjust as needed -->
+            <corners android:topLeftRadius="40dp" android:topRightRadius="40dp" />
+        </shape>
+    </item>
+
+</layer-list>
